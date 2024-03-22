@@ -1,0 +1,118 @@
+.notes-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.notes-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.create-note-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.create-note-button .plus-icon {
+    margin-right: 5px;
+}
+
+.notes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.note-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note-card-title {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    min-height: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 2px;
+}
+
+.note-card-content {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.note-card-actions {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px; 
+}
+
+.note-card-actions a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+
+.view-note-button {
+    background-color: #17a2b8;
+}
+
+.edit-note-button {
+    background-color: #ffc107;
+    color: black;
+}
+
+.note-button.delete-button {
+    background-color: red;
+}
+
+@media (min-width: 800px) {
+    .notes-grid {
+        justify-content: flex-start;
+    }
+
+    .note-card {
+        flex: 0 1 calc(25% - 20px); /* 4 boxes per row on larger screens */
+    }
+}
+
+/* Adjustments for when you want only 2 boxes per row on medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .note-card {
+        flex: 0 1 calc(50% - 20px); /* 2 boxes in a row on medium screens */
+    }
+    .create-note-button {
+        display: inline-block;
+        padding: 10px 15px;
+        padding-left: 7px;
+}
+}
+
+/* Mobile view remains the same with 1 box per row */
+@media (max-width: 768px) {
+    .note-card {
+        flex: 0 1 calc(100% - 20px); /* Full width on smaller screens */
+    }
+}

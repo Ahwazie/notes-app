@@ -1,0 +1,35 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1px;
+}
+
+.btn-custom-back {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+
+.btn-custom-back:hover {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+.custom-header {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-custom-save {
+    background-color: #17a2b8;
+    color: white;
+    border-color: #17a2b8;
+}
+
+.btn-custom-save:hover {
+    background-color: #1397a3;
+    border-color: #117d8c;
+}
+
+/* Additional modern styling can be added as needed */
+

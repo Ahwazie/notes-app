@@ -1,0 +1,67 @@
+.show-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.note-display {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.note-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    min-height: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 2px;
+}
+
+.note-content {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.note-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.button.edit {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.button.back {
+    background-color: #f4931d; 
+    color: white;
+}
+
+.button.delete {
+    background-color: red; 
+    color: white;
+}
+
+.button:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+

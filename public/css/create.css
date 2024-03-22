@@ -1,0 +1,100 @@
+/* Basic Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', sans-serif;
+  }
+  
+  /* Container and Layout */
+  .create-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .back-button {
+    display: block; /* Change to block for new line */
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin: 70px 0px;
+    margin-left: 10px;
+    background-color: #ff8c00; /* Orange background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: absolute; /* Position absolute for placement */
+    top: 20px; /* Position from top */
+    left: 20px; /* Position from left */
+  }
+  
+  .back-button:hover {
+    background-color: #e67e00; /* Darker shade when hovered */
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3); /* Slightly more pronounced shadow on hover */
+  }
+  
+  .form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .form-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Fields */
+  .form-field {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #17a2b8;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #388E3C; /* Slightly darker shade for hover state */
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3); /* Slightly more pronounced shadow on hover */
+}
+  
+
